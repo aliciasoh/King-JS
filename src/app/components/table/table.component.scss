@@ -1,0 +1,38 @@
+@import "../../../styles.scss";
+
+.bg{
+    background-image: $light-bg;
+    width: 100%;
+    min-height: 100%;
+    &.night{
+        background-image: $dark-bg;
+    }
+}
+
+.spinner-holder{
+    background-color: rgba(255,255,255,0.85);
+    padding: 50px;
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    .spinner-container{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.table-holder{
+    padding: 50px;
+    display: grid;
+    table, th.mat-header-cell{
+        text-align: center;
+    }
+    mat-form-field{
+        width: 90%;
+        background-color: $grey;
+        padding: 5%;
+        input{
+            color: white;
+        }
+    }
+}
