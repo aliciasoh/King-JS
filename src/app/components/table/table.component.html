@@ -1,5 +1,5 @@
 <div [ngClass]="{'night': isNight}" class="bg">
-    <div class="spinner-holder" *ngIf="!dataSource">
+    <div class="spinner-holder" *ngIf="!dataSource.sort">
         <div class="spinner-container">
             <mat-spinner [diameter]="50">
             </mat-spinner>

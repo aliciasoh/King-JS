@@ -4,17 +4,21 @@
     background-image: $light-bg;
     width: 100%;
     min-height: 100%;
+    position: absolute;
     &.night{
         background-image: $dark-bg;
     }
 }
 
 .spinner-holder{
-    background-color: rgba(255,255,255,0.85);
-    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.7);
     position: absolute;
     width: 100%;
-    top: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
     .spinner-container{
         display: flex;
         justify-content: center;
@@ -24,6 +28,15 @@
 .table-holder{
     padding: 50px;
     display: grid;
+    @media only screen and (max-width: 515px){
+        padding: 0px;
+        width: 300px;
+        margin: 50px;
+        overflow: auto;
+        margin: 0 auto;
+        height: 500px;
+        margin-top: 15%;
+    }
     table, th.mat-header-cell{
         text-align: center;
     }
